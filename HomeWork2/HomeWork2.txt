@@ -1,1 +1,34 @@
+1.Как отказаться от изменений в файле (файлах) находящийся в рабочем каталоге (work directory)?
+
+cd/18-020523-e/git checkout -- song.txt
+cd/18-020523-e/git checkout -- .
+
+
+2.Как вернуть файл из индекса в рабочий каталог?
+
+cd/18-020523-e/git restore -- staged song.txt
+
+
+3.Как отменить ошибочный commit ? - Перечислить все возможные варианты.
+
+git reset HEAD^
+git reset --hard HEAD^
+git reset <коммит>
+
+4.Как исправить коммит отправленный на сервер GitHub?
+
+cd/18-020523-e
+git commit --amend
+git push --force origin main
+
+5.Как создать новую ветку и переключится в нее?
+
+cd/18-020523-e
+git checkout -b second
+
+
+В ответах на вопросы необходимо указать конкретные команда git.
+
+
+
 
